@@ -19,3 +19,5 @@ const pAequorFactory = (num, arr) => {
         dna: arr
     }
 };
+
+console.log(pAequorFactory(1,mockUpStrand()));
