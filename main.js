@@ -15,9 +15,18 @@ const mockUpStrand = () => {
 
 const pAequorFactory = (num, arr) => {
     return {
-        specimenNum: num,
-        dna: arr
+        _specimenNum: num,
+        _dna: arr,
+        get specimenNum() {
+            return this._specimenNum;
+        },
+        set specimenNum(newNum) {
+            this._specimenNum = newNum;
+        },
     }
 };
 
-console.log(pAequorFactory(1,mockUpStrand()));
+const test = pAequorFactory(1,mockUpStrand());
+
+console.log(test.specimenNum);
+
