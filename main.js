@@ -13,6 +13,6 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
-const pAequorFactory = () => {
+const pAequorFactory = (num, arr) => {
 
 };
