@@ -31,6 +31,9 @@ const pAequorFactory = (num, arr) => {
         },
         mutate() {
             const rng = Math.floor(Math.random() * this.dna.length);
+            const randomBase = this.dna[rng];
+
+            console.log(randomBase);
         }
     }
 };
