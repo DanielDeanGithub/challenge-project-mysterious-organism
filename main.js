@@ -12,3 +12,7 @@ const mockUpStrand = () => {
   }
   return newStrand;
 };
+
+const pAequorFactory = () => {
+
+};
