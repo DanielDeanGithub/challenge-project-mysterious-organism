@@ -46,5 +46,6 @@ const pAequorFactory = (num, arr) => {
 const test = pAequorFactory(1,mockUpStrand());
 
 // console.log(test.specimenNum);
-// console.log(test.dna);
+console.log(test.dna);
 test.mutate();
+console.log(test.dna);
