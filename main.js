@@ -28,6 +28,9 @@ const pAequorFactory = (num, arr) => {
         },
         set dna(newdna) {
             this._dna = newdna;
+        },
+        mutate() {
+            const rng = Math.floor(Math.random() * this.dna.length);
         }
     }
 };
@@ -36,3 +39,4 @@ const test = pAequorFactory(1,mockUpStrand());
 
 console.log(test.specimenNum);
 console.log(test.dna);
+test.mutate();
