@@ -32,14 +32,19 @@ const pAequorFactory = (num, arr) => {
         mutate() {
             const rng = Math.floor(Math.random() * this.dna.length);
             const randomBase = this.dna[rng];
+            let newBase = '';
 
-            console.log(randomBase);
+            do {
+                newBase = returnRandBase();
+            } while (newBase === randomBase);
+
+            this.dna[rng] = newBase;
         }
     }
 };
 
 const test = pAequorFactory(1,mockUpStrand());
 
-console.log(test.specimenNum);
-console.log(test.dna);
+// console.log(test.specimenNum);
+// console.log(test.dna);
 test.mutate();
