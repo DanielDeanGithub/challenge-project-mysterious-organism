@@ -23,6 +23,12 @@ const pAequorFactory = (num, arr) => {
         set specimenNum(newNum) {
             this._specimenNum = newNum;
         },
+        get dna() {
+            return this._dna;
+        },
+        set dna(newdna) {
+            this._dna = newdna;
+        }
     }
 };
 
