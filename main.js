@@ -54,10 +54,11 @@ const pAequorFactory = (num, arr) => {
                     console.log('==== Base match ====')
                 }            
             };
+            
+            matchPercent = ((matchTotal / dnaLength) * 100).toFixed(2);
 
             console.log(matchTotal);
-            
-            
+            console.log(matchPercent);
 
         }
     }
