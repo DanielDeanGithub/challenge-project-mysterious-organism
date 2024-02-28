@@ -63,7 +63,7 @@ const pAequorFactory = (num, arr) => {
                 }
             }
 
-            console.log(surviveMatch);
+            return ((surviveMatch / this.dna.length) * 100).toFixed(2) > 60;
         }
     }
 };
@@ -78,4 +78,4 @@ const test2 = pAequorFactory(2,mockUpStrand());
 
 //test.compareDNA(test2);
 
-test.willLikelySurvive();
+console.log(test.willLikelySurvive());
