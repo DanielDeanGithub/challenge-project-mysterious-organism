@@ -42,8 +42,9 @@ const pAequorFactory = (num, arr) => {
         },
         compareDNA({dna}) {
             console.log(dna);
+            const dnaLength = this.dna.length;
             
-            for(let i = 0; i < this.dna.length; i++) {
+            for(let i = 0; i < dnaLength; i++) {
 
             };
         }
