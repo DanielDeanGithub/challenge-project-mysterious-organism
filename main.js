@@ -45,21 +45,14 @@ const pAequorFactory = (num, arr) => {
             let matchTotal = 0;
             let matchPercent = 0;
             
-            for(let i = 0; i < dnaLength; i++) {
-                console.log('current dna base: ' + this.dna[i]);
-                console.log('comparing dna base: ' + dna[i]);
-                
+            for(let i = 0; i < dnaLength; i++) {                
                 if(this.dna[i] === dna[i]) {
                     matchTotal++;
-                    console.log('==== Base match ====')
                 }            
             };
             
             matchPercent = ((matchTotal / dnaLength) * 100).toFixed(2);
-
-            console.log(matchTotal);
-            console.log(matchPercent);
-
+            console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
         }
     }
 };
