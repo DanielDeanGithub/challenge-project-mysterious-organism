@@ -55,7 +55,9 @@ const pAequorFactory = (num, arr) => {
             console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
         },
         willLikelySurvive() {
-            
+            const surviveArr = [];
+
+
         }
     }
 };
@@ -68,5 +70,5 @@ const test2 = pAequorFactory(2,mockUpStrand());
 // test.mutate();
 // console.log(test.dna);
 
-test.compareDNA(test2);
+//test.compareDNA(test2);
 
