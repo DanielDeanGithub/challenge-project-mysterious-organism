@@ -41,7 +41,11 @@ const pAequorFactory = (num, arr) => {
             this.dna[rng] = newBase;
         },
         compareDNA({dna}) {
-            console.log(dna);            
+            console.log(dna);
+            
+            for(let i = 0; i < this.dna.length; i++) {
+
+            };
         }
     }
 };
