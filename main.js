@@ -70,12 +70,11 @@ const pAequorFactory = (num, arr) => {
 
 const pAequorArray = [];
 
+while (pAequorArray.length < 30) {
+    pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
+}
 
-
-
-
-
-
+console.log(pAequorArray);
 
 // const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
