@@ -55,7 +55,7 @@ const pAequorFactory = (num, arr) => {
             console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
         },
         willLikelySurvive() {
-            const surviveMatch = 0;
+            let surviveMatch = 0;
 
             for(const base of this.dna) {
                 if(base === 'C' || base === 'G') {
