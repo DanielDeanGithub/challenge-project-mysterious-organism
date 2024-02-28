@@ -57,7 +57,9 @@ const pAequorFactory = (num, arr) => {
         willLikelySurvive() {
             const surviveArr = [];
 
-
+            for(const base of this.dna) {
+                
+            }
         }
     }
 };
