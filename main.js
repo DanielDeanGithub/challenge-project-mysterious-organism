@@ -40,7 +40,7 @@ const pAequorFactory = (num, arr) => {
 
             this.dna[rng] = newBase;
         },
-        compareDNA() {
+        compareDNA(obj) {
             
         }
     }
