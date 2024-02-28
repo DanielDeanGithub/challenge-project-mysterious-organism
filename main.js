@@ -39,6 +39,9 @@ const pAequorFactory = (num, arr) => {
             } while (newBase === randomBase);
 
             this.dna[rng] = newBase;
+        },
+        compareDNA() {
+            
         }
     }
 };
