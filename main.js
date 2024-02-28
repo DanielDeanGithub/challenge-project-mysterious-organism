@@ -68,8 +68,17 @@ const pAequorFactory = (num, arr) => {
     }
 };
 
-const test = pAequorFactory(1,mockUpStrand());
-const test2 = pAequorFactory(2,mockUpStrand());
+const pAequorArray = [];
+
+
+
+
+
+
+
+
+// const test = pAequorFactory(1,mockUpStrand());
+// const test2 = pAequorFactory(2,mockUpStrand());
 
 // console.log(test.specimenNum);
 // console.log(test.dna);
@@ -78,4 +87,4 @@ const test2 = pAequorFactory(2,mockUpStrand());
 
 //test.compareDNA(test2);
 
-console.log(test.willLikelySurvive());
+// console.log(test.willLikelySurvive());
