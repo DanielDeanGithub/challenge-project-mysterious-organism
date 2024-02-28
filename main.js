@@ -43,6 +43,7 @@ const pAequorFactory = (num, arr) => {
         compareDNA({dna}) {
             const dnaLength = this.dna.length;
             let matchTotal = 0;
+            let matchPercent = 0;
             
             for(let i = 0; i < dnaLength; i++) {
                 console.log('current dna base: ' + this.dna[i]);
@@ -55,6 +56,8 @@ const pAequorFactory = (num, arr) => {
             };
 
             console.log(matchTotal);
+            
+            
 
         }
     }
