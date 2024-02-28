@@ -58,7 +58,9 @@ const pAequorFactory = (num, arr) => {
             const surviveArr = [];
 
             for(const base of this.dna) {
-                
+                if(base === 'C' || base === 'G') {
+                    
+                }
             }
         }
     }
