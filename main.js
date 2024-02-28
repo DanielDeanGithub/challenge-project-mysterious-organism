@@ -40,15 +40,18 @@ const pAequorFactory = (num, arr) => {
 
             this.dna[rng] = newBase;
         },
-        compareDNA(obj) {
-            
+        compareDNA({dna}) {
+            console.log(dna);            
         }
     }
 };
 
 const test = pAequorFactory(1,mockUpStrand());
+const test2 = pAequorFactory(2,mockUpStrand());
 
 // console.log(test.specimenNum);
-console.log(test.dna);
-test.mutate();
-console.log(test.dna);
+// console.log(test.dna);
+// test.mutate();
+// console.log(test.dna);
+
+test.compareDNA(test2);
