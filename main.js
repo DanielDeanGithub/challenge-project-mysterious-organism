@@ -55,3 +55,4 @@ const test2 = pAequorFactory(2,mockUpStrand());
 // console.log(test.dna);
 
 test.compareDNA(test2);
+
