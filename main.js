@@ -123,10 +123,6 @@ const findMostRelatedpAequors = arr => {
     return mostRelatedpAequors;
 };
 
-
-
-console.log(findMostRelatedpAequors(pAequorArray));
-
 // const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
 
@@ -143,3 +139,5 @@ console.log(findMostRelatedpAequors(pAequorArray));
 
 // console.log(test.dna);
 // console.log(test.complementStrand());
+
+console.log(findMostRelatedpAequors(pAequorArray));
