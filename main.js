@@ -72,12 +72,16 @@ const pAequorFactory = (num, arr) => {
                 switch (e) {
                   case "A":
                     complementStrandArr.push("T");
+                    break;
                   case "T":
                     complementStrandArr.push("A");
+                    break;
                   case "C":
                     complementStrandArr.push("G");
+                    break;
                   case "G":
                     complementStrandArr.push("C");
+                    break;
                   default:
                     console.log("Error: invalid input");
                 }
