@@ -113,4 +113,5 @@ const test = pAequorFactory(1,mockUpStrand());
 
 // console.log(pAequorArray);
 
-test.complementStrand();
+console.log(test.dna);
+console.log(test.complementStrand());
