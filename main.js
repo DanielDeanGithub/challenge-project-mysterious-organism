@@ -98,8 +98,23 @@ while (pAequorArray.length < 30) {
     pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
 }
 
+const mostRelatedpAequor = [];
 
-const test = pAequorFactory(1,mockUpStrand());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
 
 // console.log(test.specimenNum);
@@ -113,5 +128,7 @@ const test = pAequorFactory(1,mockUpStrand());
 
 // console.log(pAequorArray);
 
-console.log(test.dna);
-console.log(test.complementStrand());
+// console.log(test.dna);
+// console.log(test.complementStrand());
+
+
