@@ -74,8 +74,6 @@ while (pAequorArray.length < 30) {
     pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
 }
 
-console.log(pAequorArray);
-
 // const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
 
@@ -84,6 +82,8 @@ console.log(pAequorArray);
 // test.mutate();
 // console.log(test.dna);
 
-//test.compareDNA(test2);
+// test.compareDNA(test2);
 
 // console.log(test.willLikelySurvive());
+
+// console.log(pAequorArray);
