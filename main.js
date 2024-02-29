@@ -52,7 +52,8 @@ const pAequorFactory = (num, arr) => {
             };
             
             matchPercent = ((matchTotal / dnaLength) * 100).toFixed(2);
-            console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
+            //console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
+            return matchPercent;
         },
         willLikelySurvive() {
             let surviveMatch = 0;
