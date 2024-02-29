@@ -67,6 +67,10 @@ const pAequorFactory = (num, arr) => {
         },
         complementStrand() {
             const complementStrandArr = [];
+
+            this.dna.forEach(e => {
+                console.log(e);
+            });
         }
     }
 };
