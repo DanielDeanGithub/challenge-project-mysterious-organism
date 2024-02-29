@@ -101,7 +101,9 @@ while (pAequorArray.length < 30) {
 const mostRelatedpAequor = [];
 
 for (let i = 0; i < pAequorArray.length; i++) {
+    for (let j = 0; j < pAequorArray.length; j++) {
 
+    };    
 };
 
 
