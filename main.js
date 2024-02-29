@@ -86,6 +86,8 @@ const pAequorFactory = (num, arr) => {
                     console.log("Error: invalid input");
                 }
             });
+
+            return complementStrandArr;
         }
     }
 };
