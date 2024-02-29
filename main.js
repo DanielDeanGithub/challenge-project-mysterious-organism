@@ -82,7 +82,7 @@ while (pAequorArray.length < 30) {
 }
 
 
-// const test = pAequorFactory(1,mockUpStrand());
+const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
 
 // console.log(test.specimenNum);
@@ -95,3 +95,5 @@ while (pAequorArray.length < 30) {
 // console.log(test.willLikelySurvive());
 
 // console.log(pAequorArray);
+
+test.complementStrand();
