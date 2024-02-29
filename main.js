@@ -99,39 +99,33 @@ while (pAequorArray.length < 30) {
     pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
 }
 
-let mostRelatedpAequors = [];
-let bestMatchPercent = 0;
-
-for (let i = 0; i < pAequorArray.length; i++) {
-    for (let j = 0; j < pAequorArray.length; j++) {
-        if (i !== j) {
-            const currentMatchPercent = pAequorArray[i].compareDNA(pAequorArray[j]); 
-            //console.log(`specimen #1 and specimen #2 have ${currentMatchPercent}% DNA in common`);
-
-            if(currentMatchPercent > bestMatchPercent) {
-                //console.log('New best match found!');
-                bestMatchPercent = currentMatchPercent;
-                //console.log(bestMatchPercent);
-                mostRelatedpAequors.length = 0;
-                mostRelatedpAequors.push(pAequorArray[i], pAequorArray[j]);
+const findMostRelatedpAequors = arr => {
+    let mostRelatedpAequors = [];
+    let bestMatchPercent = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (i !== j) {
+                const currentMatchPercent = arr[i].compareDNA(arr[j]); 
+                //console.log(`specimen #1 and specimen #2 have ${currentMatchPercent}% DNA in common`);
+    
+                if(currentMatchPercent > bestMatchPercent) {
+                    //console.log('New best match found!');
+                    bestMatchPercent = currentMatchPercent;
+                    //console.log(bestMatchPercent);
+                    mostRelatedpAequors.length = 0;
+                    mostRelatedpAequors.push(arr[i], arr[j]);
+                }
             }
-        }
-    };    
+        };    
+    };
+
+    return mostRelatedpAequors;
 };
 
-console.log(mostRelatedpAequors);
 
 
-
-
-
-
-
-
-
-
-
-
+console.log(findMostRelatedpAequors(pAequorArray));
 
 // const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
@@ -149,5 +143,3 @@ console.log(mostRelatedpAequors);
 
 // console.log(test.dna);
 // console.log(test.complementStrand());
-
-
