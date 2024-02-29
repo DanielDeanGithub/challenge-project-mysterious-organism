@@ -66,7 +66,7 @@ const pAequorFactory = (num, arr) => {
             return ((surviveMatch / this.dna.length) * 100).toFixed(2) > 60;
         },
         complementStrand() {
-            
+            const complementStrandArr = [];
         }
     }
 };
