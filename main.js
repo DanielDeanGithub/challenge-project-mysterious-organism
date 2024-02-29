@@ -51,7 +51,7 @@ const pAequorFactory = (num, arr) => {
                 }            
             };
             
-            matchPercent = ((matchTotal / dnaLength) * 100).toFixed(2);
+            matchPercent = parseFloat(((matchTotal / dnaLength) * 100).toFixed(2));
             //console.log(`specimen #1 and specimen #2 have ${matchPercent}% DNA in common`);
             return matchPercent;
         },
@@ -99,16 +99,27 @@ while (pAequorArray.length < 30) {
     pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
 }
 
-const mostRelatedpAequor = [];
-let matchPercent = 0;
+let mostRelatedpAequors = [];
+let bestMatchPercent = 0;
 
 for (let i = 0; i < pAequorArray.length; i++) {
     for (let j = 0; j < pAequorArray.length; j++) {
         if (i !== j) {
-            pAequorArray[i].compareDNA(pAequorArray[j]);
+            const currentMatchPercent = pAequorArray[i].compareDNA(pAequorArray[j]); 
+            //console.log(`specimen #1 and specimen #2 have ${currentMatchPercent}% DNA in common`);
+
+            if(currentMatchPercent > bestMatchPercent) {
+                //console.log('New best match found!');
+                bestMatchPercent = currentMatchPercent;
+                //console.log(bestMatchPercent);
+                mostRelatedpAequors.length = 0;
+                mostRelatedpAequors.push(pAequorArray[i], pAequorArray[j]);
+            }
         }
     };    
 };
+
+console.log(mostRelatedpAequors);
 
 
 
