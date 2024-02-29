@@ -69,7 +69,18 @@ const pAequorFactory = (num, arr) => {
             const complementStrandArr = [];
 
             this.dna.forEach(e => {
-                console.log(e);
+                switch (e) {
+                  case "A":
+                    complementStrandArr.push("T");
+                  case "T":
+                    complementStrandArr.push("A");
+                  case "C":
+                    complementStrandArr.push("G");
+                  case "G":
+                    complementStrandArr.push("C");
+                  default:
+                    console.log("Error: invalid input");
+                }
             });
         }
     }
