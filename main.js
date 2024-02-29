@@ -64,6 +64,9 @@ const pAequorFactory = (num, arr) => {
             }
 
             return ((surviveMatch / this.dna.length) * 100).toFixed(2) > 60;
+        },
+        complementStrand() {
+            
         }
     }
 };
@@ -73,6 +76,7 @@ const pAequorArray = [];
 while (pAequorArray.length < 30) {
     pAequorArray.push(pAequorFactory(pAequorArray.length + 1,mockUpStrand()));
 }
+
 
 // const test = pAequorFactory(1,mockUpStrand());
 // const test2 = pAequorFactory(2,mockUpStrand());
