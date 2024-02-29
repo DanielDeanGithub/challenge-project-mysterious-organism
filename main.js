@@ -100,10 +100,13 @@ while (pAequorArray.length < 30) {
 }
 
 const mostRelatedpAequor = [];
+let matchPercent = 0;
 
 for (let i = 0; i < pAequorArray.length; i++) {
     for (let j = 0; j < pAequorArray.length; j++) {
-
+        if (i !== j) {
+            pAequorArray[i].compareDNA(pAequorArray[j]);
+        }
     };    
 };
 
